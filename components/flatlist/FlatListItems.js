@@ -17,7 +17,7 @@ const FlatListItems = () => {
 
   return (
     <View>
-      <Button title="start tour" onPress={()=>{start()}}/>
+      <Button title="start tour" onPress={()=>{start("HOME")}}/>
       <FlatList 
               renderItem={({item}) => <CardWrapper index={item.index} color={item.color} width={item.width}/>}
               data={[{index:0, color:'red',width:400},{index:1, color:'blue',width:500},{index:2, color:'green',width:200},{index:3, color:'grey',width:700},{index:4, color:'yellow',width:600},{index:5, color:'white',width:150}]}

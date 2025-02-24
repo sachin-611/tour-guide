@@ -13,7 +13,7 @@ export default function App() {
         tooltipComponent={({ step, next }) => {
           console.log("step", step);
           return (
-          <Popover targetPosition={step.targetPosition} text={step.text} next={next} />
+          step && <Popover targetPosition={step.targetPosition} text={step.text} next={next} />
         )}}
         backdropColor="rgba(0,0,0,0.5)">
           <FlatListItems />
